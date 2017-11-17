@@ -274,9 +274,6 @@ class Enrollment extends BaseEnrollment
                                 $enrollFee->lock = 0;
                                 $enrollFee->link('enrollment', $this);
                             }
-                            else{
-
-                            }
                         }
                     }
                     /* Lunch Fee */
