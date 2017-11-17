@@ -1,0 +1,1262 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo|Hanuman');
+html,
+body {
+    height: 100%;
+    font-family: 'Arimo', 'Hanuman', sans-serif !important;
+
+}
+.navbar-brand {padding: 5px}
+.navbar-brand .logo{height:100%;}
+.contentblock{font-family: 'Arimo', 'Hanuman', sans-serif !important;}
+.top-user, .top-user form{
+    float:left;
+}
+.top-user button{
+    margin:0;
+    padding:0;
+    color: #FFF;
+}
+.search-form{
+    background: #34495E;
+    padding: 10px;
+    color: #FFF;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+    background-color: #e9ebee;
+}
+
+.wrap > .container {
+    padding: 100px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+.invoice-logo{
+    width: 30%;
+    float: right;
+}
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+.btn-link.logout:hover{
+    color: rgba(231, 76, 60,1.0);
+}
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td
+{
+    font-size:12px;
+}
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+/* FORM ELEMENT */
+.btn{
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+.panel{
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+.panel-heading{
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.panel-primary > .panel-heading {
+    color: #fff;
+    background-color: rgba(52, 73, 94,1.0);
+    border-color: rgba(52, 73, 94,1.0);
+}
+.panel-primary {
+    border-color: rgba(52, 73, 94,1.0);
+}
+/* PROCESS BLOCK */
+
+.process-arrow {
+    list-style: none;
+    overflow: hidden;
+    margin: 20px 0;
+    padding: 0;
+}
+.process-arrow li {
+    float: left;
+}
+.process-arrow li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0 10px 55px;
+    background: brown; /* fallback color */
+    background: rgba(22, 160, 133,1.0);
+    position: relative;
+    display: block;
+    float: left;
+}
+.process-arrow li a:after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid rgba(22, 160, 133,1.0);
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    left: 100%;
+    z-index: 2;
+}
+.process-arrow li a:before {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid white;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: 1px;
+    left: 100%;
+    z-index: 1;
+}
+.process-arrow li:first-child a {
+    padding-left: 10px;
+}
+.process-arrow li:nth-child(2) a       { background:        rgba(39, 174, 96,1.0); }
+.process-arrow li:nth-child(2) a:after { border-left-color: rgba(39, 174, 96,1.0); }
+.process-arrow li:nth-child(3) a       { background:        rgba(243, 156, 18,1.0); }
+.process-arrow li:nth-child(3) a:after { border-left-color: rgba(243, 156, 18,1.0); }
+.process-arrow li:nth-child(4) a       { background:        rgba(142, 68, 173,1.0); }
+.process-arrow li:nth-child(4) a:after { border-left-color: rgba(142, 68, 173,1.0); }
+.process-arrow li:nth-child(5) a       { background:        rgba(192, 57, 43,1.0); }
+.process-arrow li:nth-child(5) a:after { border-left-color: rgba(192, 57, 43,1.0); }
+
+.process-arrow li a:hover { background: rgba(52, 73, 94,1.0); }
+.process-arrow li a:hover:after { border-left-color: rgba(52, 73, 94,1.0) !important; }
+
+
+/* COLOR */
+.bg-turuoise{background: rgba(26, 188, 156,1.0);}
+.bg-green-sea{background: rgba(22, 160, 133,1.0);}
+.bg-wet-asphalt{background: rgba(52, 73, 94,1.0)}
+.bg-wet-asphalt a{color: #FFF;}
+/* NOTIFICATION */
+.current-ay{
+    float:right;
+}
+.notification.notification-warning {
+    background: rgba(243, 156, 18,1.0);
+}
+
+.notification.notification-error {
+    background: #ef9a9a;
+}
+
+.notification.notification-error .actions .fa {
+    color: #fff;
+}
+.notimenu{
+    padding:0;
+}
+
+/* NAVIGATOR */
+.headbar{
+    height: 30px;
+    background: #2ECC71;
+    z-index: 9999;
+    padding: 4px 0;
+}
+.headbar .notifications-menu{
+    float:left;
+    margin-top: 2px;
+    margin-right: 5px;
+    padding: 0;
+}
+.headbar li{list-style: none;}
+.navbar-fixed-top.second {
+    top: 30px;
+    -webkit-box-shadow: 0 1px 8px rgba(0,0,0,.3);
+    box-shadow: 0 1px 8px rgba(0,0,0,.3);
+}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus, ul.navbar-nav li a:hover, ul.navbar-nav li a:active, ul.navbar-nav li a:focus{
+    background: rgba(44, 62, 80,1.0) !important;
+}
+.navbar-nav > li > a{
+    line-height: 15px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+.footer{
+    background: rgba(52, 73, 94,1.0) !important;
+    color: #FEFEFE;
+}
+ul.navbar-nav li ul{
+    background: rgba(44, 62, 80,1.0);
+}
+
+ul.navbar-nav li ul li a{
+    color: #FFF;
+}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus, ul.navbar-nav li a:hover, ul.navbar-nav li a:active, ul.navbar-nav li a:focus, ul.navbar-nav li ul li a:hover{
+    color: rgba(46, 204, 113,1.0)
+}
+.notification.dropdown-menu{
+    z-index:10000;
+    width: 350px;
+}
+.notifooter {
+}
+.notifications-icon-count{
+    display:block;
+    float:right
+}
+a.dropdown-toggle{
+    text-decoration: none;
+    display: block;
+}
+/* SIDEBLOCK */
+.side-block {
+    list-style: none;
+    overflow: hidden;
+    font: 14px Helvetica, Arial, Sans-Serif;
+    margin: 10px 0 0 0;
+    padding: 0 20px 0 0;
+
+}
+
+.side-block h4{
+    margin: 0;
+    padding:10px;
+    color: #FFF;
+    background: rgba(44, 62, 80,1.0);
+}
+.contentblock {
+    font: 14px Helvetica, Arial, Sans-Serif;
+    margin: 10px 0 0 0;
+
+}
+.contentblock h4, .contentblock h1, .contentblock h2{
+    font-size: 18px;
+    margin: 15px 0;
+    padding:10px;
+    color: #FFF;
+    background: rgba(44, 62, 80,1.0);
+}
+
+.contentblock .vf-create h4, .contentblock .vf-create h1, .contentblock .vf-create h2{
+    margin: 0;
+}
+
+.side-block ul{
+    background: #FFF;
+    padding: 10px;
+    margin:0;
+}
+
+.side-block ul li{
+    padding: 10px;
+    border-bottom: 1px solid rgba(189, 195, 199,1.0);
+}
+
+.side-block ul li:hover{
+    background: rgba(149, 165, 166,1.0);
+
+}
+
+.side-block ul a{
+    color: rgba(44, 62, 80,1.0);
+    text-decoration: none;
+}
+
+.fa.go-left{
+    margin-right: 10px;
+}
+
+.branch-logo{
+    width: 100%;
+}
+.navbar-nav.navbar-right.nav{
+}
+
+/** Action **/
+.action-row{
+    background: #4b6074;
+    padding-bottom: 20px;
+    padding-left: 80px;
+}
+.action-row .container{
+    padding-top: 100px;
+}
+.action-row + .container{
+    padding-top: 10px;
+}
+ul.action-button{
+	display: flex;
+    list-style: none;
+    margin-left: -40px;
+}
+
+ul.action-button li{
+    width: 100px;
+    /*background: #8195a8;*/
+    margin: 0 20px 0 0;
+    padding: 5px;
+    text-align: center;
+    border: 3px solid #5d7388;
+}
+
+ul.action-button li:hover, ul.action-button li.active:hover{
+    /*background: rgba(41, 128, 185,1.0);*/
+    transition-delay: 0.1s;
+    transition-property: background;
+    border-bottom: 3px solid #1565C0;
+}
+ul.action-button li.active{
+    /*background: rgba(231, 76, 60,1.0);*/
+    transition-delay: 0.1s;
+    transition-property: background;
+    border-bottom: 3px solid #FFC107;
+}
+
+ul.action-button li a, ul.action-button li a:hover, ul.action-button li a:active{
+    color: #FFF;
+    background: none !important;
+    width: 100%;
+    font-size:12px;
+    margin:0;
+    padding:0;
+}
+
+ul.action-button li a span{
+    float: none;
+    display: inline-block;
+	width: 100%;
+    font-size:12px;
+}
+
+ul.action-button li i{
+    font-size:40px;
+    float:none;
+    width: 100%;
+    margin-bottom:5px;
+}
+
+/*** PROCESS STEPS ***/
+.stepwizard-step p {
+    margin-top: 10px;
+}
+
+.stepwizard-row {
+    display: table-row;
+}
+
+.stepwizard {
+    display: table;
+    width: 100%;
+    position: relative;
+}
+
+.stepwizard-step button[disabled] {
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important;
+}
+
+.stepwizard-row:before {
+    top: 14px;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    z-order: 0;
+
+}
+
+.stepwizard-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+}
+
+/*Vertical Steps*/
+.list-group.vertical-steps{
+    padding-left: 30px;
+    padding-top: 10px;
+    margin-bottom: 0;
+    background-color: #fff;
+    padding-bottom: 30px;
+}
+.list-group.vertical-steps .list-group-item{
+    border:none;
+    border-left:3px solid #ece5dd;
+    box-sizing:border-box;
+    border-radius:0;
+    counter-increment: step-counter;
+    padding-left:8px;
+    padding-right:0px;
+    padding-bottom:40px;
+    padding-top:0px;
+}
+.list-group.vertical-steps .list-group-item.active{
+    background-color:transparent;
+    color:inherit;
+}
+.list-group.vertical-steps .list-group-item:last-child{
+    border-left:3px solid transparent;
+    padding-bottom:0;
+}
+.list-group.vertical-steps .list-group-item::before {
+    border-radius: 50%;
+    background-color:#ece5dd;
+    color:#555;
+    content: counter(step-counter);
+    display:inline-block;
+    float:left;
+    height:50px;
+    line-height:50px;
+    margin-left:-35px;
+    margin-right: 10px;
+    text-align:center;
+    width:50px;
+}
+.list-group.vertical-steps .list-group-item span,
+.list-group.vertical-steps .list-group-item a{
+    display:block;
+    overflow:hidden;
+    padding-top:2px;
+}
+/*Active/ Completed States*/
+.list-group.vertical-steps .list-group-item span{
+    font-size: 16px;
+    padding-top: 17px;
+}
+.list-group.vertical-steps li:nth-child(1).list-group-item::before{
+    background-color:#1abc9c;
+    color:#fff;
+}
+.list-group.vertical-steps li:nth-child(2).list-group-item::before{
+    background-color:#3498db;
+    color:#fff;
+}
+.list-group.vertical-steps li:nth-child(3).list-group-item::before{
+    background-color:#2ecc71;
+    color:#fff;
+}
+.list-group.vertical-steps li:nth-child(4).list-group-item::before{
+    background-color:#9b59b6;
+    color:#fff;
+}
+.list-group.vertical-steps li:nth-child(5).list-group-item::before{
+    background-color:#34495e;
+    color:#fff;
+}
+.list-group.vertical-steps li:nth-child(6).list-group-item::before{
+    background-color:#34495e;
+    color:#fff;
+}
+.list-group.vertical-steps .list-group-item{
+    border-left:3px solid #34495e;
+
+}
+.list-group.vertical-steps .list-group-item.completed:last-child{
+    border-left:3px solid transparent;
+}
+
+/** ORGINE **/
+div.ori-box{
+    border: 1px solid #dddfe2;
+}
+span.ori-title{
+    display: block;
+    font-size: 16px;
+    font-weight:bold;
+    color:#111;
+    padding: 15px 10px;
+    background-color: #f6f7f9;
+    border-bottom: 1px solid #dddfe2;
+    border-radius: 2px 2px 0 0;
+}
+
+/* SWITCH */
+.inline-checkbox{
+    margin-top: 25px;
+}
+
+.origine-white-tab .tab-content{
+    background: #FFF;
+}
+
+/* Button */
+.btn-primary {
+    color: #fff;
+    background-color: #546E7A;
+    border-color: #455A64;
+}
+
+/* Checkbox */
+input[type=checkbox].circle-checkbox {
+    position:absolute;
+    z-index:-1000;
+    left:-1000px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height:1px;
+    width:1px;
+    margin:-1px;
+    padding:0;
+    border:0;
+}
+
+input[type=checkbox].circle-checkbox + span.circle-label {
+    padding-left:55px;
+    height:50px;
+    display:inline-block;
+    line-height:50px;
+    background-repeat:no-repeat;
+    background-position: 0 0;
+    font-size:50px;
+    vertical-align:middle;
+    cursor:pointer;
+
+}
+
+input[type=checkbox].circle-checkbox:checked + span.circle-label {
+    background-position: 0 -50px;
+}
+span.circle-label {
+    background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_6a85234bd18e936e19750515adec25ca.png);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+input[type=checkbox].toggle-checkbox{
+    display: none;
+}
+span.toggle-label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 50px;
+    height: 20px;
+    background: grey;
+    display: block;
+    border-radius: 20px;
+    position: relative;
+}
+
+span.toggle-label:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 16px;
+    transition: 0.3s;
+}
+
+input[type=checkbox].toggle-checkbox:checked + span.toggle-label {
+    background: #449D44;
+}
+
+input[type=checkbox].toggle-checkbox:checked + span.toggle-label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+span.toggle-label:active:after {
+    width: 16px;
+}
+
+/* #Buttons
+==================================================*/
+
+/* #Sun Flower Button
+==================================================*/
+.paper-button-sun-flower-button {
+    position: relative;
+    vertical-align: top;
+    padding: 5px 10px;
+    
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #f1c40f;
+    border: 0;
+    border-bottom: 2px solid #e2b607;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #e2b607;
+    box-shadow: inset 0 -2px #e2b607;
+}
+.paper-button-sun-flower-button:active {
+    top: 1px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* #Orange Flat Button
+==================================================*/
+.paper-button-orange {
+    position: relative;
+    vertical-align: top;
+    padding: 5px 10px;
+    
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #f39c12;
+    border: 0;
+    border-bottom: 2px solid #e8930c;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #e8930c;
+    box-shadow: inset 0 -2px #e8930c;
+}
+.paper-button-orange:active {
+    top: 1px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* #Carrot Flat Button
+==================================================*/
+.paper-button-carrot {
+    position: relative;
+    vertical-align: top;
+    padding: 5px 10px;
+    
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #e67e22;
+    border: 0;
+    border-bottom: 2px solid #da751c;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #da751c;
+    box-shadow: inset 0 -2px #da751c;
+}
+.paper-button-carrot:active {
+    top: 1px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* #Pumpkin Flat Button
+==================================================*/
+.paper-button-pumpkin {
+    position: relative;
+    vertical-align: top;
+    padding: 5px 10px;
+    
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #d35400;
+    border: 0;
+    border-bottom: 2px solid #c54e00;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #c54e00;
+    box-shadow: inset 0 -2px #c54e00;
+}
+.paper-button-pumpkin:active {
+    top: 1px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* #Alizarin Flat Button
+==================================================*/
+.paper-button-alizarin {
+    position: relative;
+    vertical-align: top;
+    padding: 5px 10px;
+    
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #e74c3c;
+    border: 0;
+    border-bottom: 2px solid #db4334;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #db4334;
+    box-shadow: inset 0 -2px #db4334;
+}
+.paper-button-alizarin:active {
+    top: 1px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* #Pomegranate Flat Button
+==================================================*/
+.paper-button-pomegranate {
+    position: relative;
+    vertical-align: top;
+    padding: 5px 10px;
+    
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #c0392b;
+    border: 0;
+    border-bottom: 2px solid #b53224;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #b53224;
+    box-shadow: inset 0 -2px #b53224;
+}
+.paper-button-pomegranate:active {
+    top: 1px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* #Turquoise Flat Button
+==================================================*/
+.paper-button-turquoise {
+    position: relative;
+    vertical-align: top;
+    padding: 5px 10px;
+    
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #1abc9c;
+    border: 0;
+    border-bottom: 2px solid #12ab8d;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #12ab8d;
+    box-shadow: inset 0 -2px #12ab8d;
+}
+.paper-button-turquoise:active {
+    top: 1px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* #Green Sea Flat Button
+==================================================*/
+.paper-button-green-sea {
+    position: relative;
+    vertical-align: top;
+    padding: 5px 10px;
+    
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #16a085;
+    border: 0;
+    border-bottom: 2px solid #14947b;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #14947b;
+    box-shadow: inset 0 -2px #14947b;
+}
+.paper-button-green-sea:active {
+    top: 1px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+/* #Emerald Flat Button
+==================================================*/
+.paper-button-emerald {
+    position: relative;
+    vertical-align: top;
+    padding: 5px 10px;
+    
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #2ecc71;
+    border: 0;
+    border-bottom: 2px solid #28be68;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #28be68;
+    box-shadow: inset 0 -2px #28be68;
+}
+.paper-button-emerald:active {
+    top: 1px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* #Nephritis Flat Button
+==================================================*/
+.paper-button-nephritis {
+    position: relative;
+    vertical-align: top;
+    padding: 5px 10px;
+    
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #27ae60;
+    border: 0;
+    border-bottom: 2px solid #219d55;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #219d55;
+    box-shadow: inset 0 -2px #219d55;
+}
+.paper-button-nephritis:active {
+    top: 1px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* #Peter River Flat Button
+==================================================*/
+.paper-button-peter-river {
+    position: relative;
+    vertical-align: top;
+    padding: 5px 10px;
+    
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #3498db;
+    border: 0;
+    border-bottom: 2px solid #2a8bcc;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #2a8bcc;
+    box-shadow: inset 0 -2px #2a8bcc;
+}
+.paper-button-peter-river:active {
+    top: 1px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* #Belize Hole Sea Flat Button
+==================================================*/
+.paper-button-belize-hole {
+    position: relative;
+    vertical-align: top;
+    padding: 5px 10px;
+    
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #2980b9;
+    border: 0;
+    border-bottom: 2px solid #2475ab;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #2475ab;
+    box-shadow: inset 0 -2px #2475ab;
+}
+.paper-button-belize-hole:active {
+    top: 1px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* #Amethyst Flat Button
+==================================================*/
+.paper-button-amethyst {
+    position: relative;
+    vertical-align: top;
+    padding: 5px 10px;
+    
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #9b59b6;
+    border: 0;
+    border-bottom: 2px solid #8d4ca7;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #8d4ca7;
+    box-shadow: inset 0 -2px #8d4ca7;
+}
+.paper-button-amethyst:active {
+    top: 1px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* #Wisteria Flat Button
+==================================================*/
+.paper-button-wisteria {
+    position: relative;
+    vertical-align: top;
+    padding: 5px 10px;
+    
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #8e44ad;
+    border: 0;
+    border-bottom: 2px solid #80399d;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #80399d;
+    box-shadow: inset 0 -2px #80399d;
+}
+.paper-button-wisteria:active {
+    top: 1px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* #Wet Asphalt Flat Button
+==================================================*/
+.wet-asphalt {
+    position: relative;
+    vertical-align: top;
+    padding: 5px 10px;
+    
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #34495e;
+    border: 0;
+    border-bottom: 2px solid #263849;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #263849;
+    box-shadow: inset 0 -2px #263849;
+}
+.paper-button-wet-asphalt:active {
+    top: 1px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* #Wet Asphalt Flat Button
+==================================================*/
+.paper-button-wet-asphalt {
+    position: relative;
+    vertical-align: top;
+    width: 100%;
+    padding: 5px 10px;
+    
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #34495e;
+    border: 0;
+    border-bottom: 2px solid #263849;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #263849;
+    box-shadow: inset 0 -2px #263849;
+}
+.paper-button-wet-asphalt:active {
+    top: 1px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* #Midnight Blue Flat Button
+==================================================*/
+.paper-button-midnight-blue {
+    position: relative;
+    vertical-align: top;
+    padding: 5px 10px;
+    
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #2c3e50;
+    border: 0;
+    border-bottom: 2px solid #22303f;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #22303f;
+    box-shadow: inset 0 -2px #22303f;
+}
+.paper-button-midnight-blue:active {
+    top: 1px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* #Clouds Flat Button
+==================================================*/
+.paper-button-clouds {
+    position: relative;
+    vertical-align: top;
+    padding: 5px 10px;
+    
+    color:#454545;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #ecf0f1;
+    border: 0;
+    border-bottom: 2px solid #dadedf;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #dadedf;
+    box-shadow: inset 0 -2px #dadedf;
+}
+.clouds:active {
+    top: 1px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* #Silver Flat Button
+==================================================*/
+.paper-button-silver {
+    position: relative;
+    vertical-align: top;
+    padding: 5px 10px;
+    
+    color:white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #bdc3c7;
+    border: 0;
+    border-bottom: 2px solid #acb2b7;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #acb2b7;
+    box-shadow: inset 0 -2px #acb2b7;
+}
+.paper-button-silver:active {
+    top: 1px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* #Concrete Flat Button
+==================================================*/
+.paper-button-concrete {
+    position: relative;
+    vertical-align: top;
+    padding: 5px 10px;
+    
+    color:white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #859596;
+    border: 0;
+    border-bottom: 2px solid #95a5a6;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #95a5a6;
+    box-shadow: inset 0 -2px #95a5a6;
+}
+.paper-button-concrete:active {
+    top: 1px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* #Asbestos Flat Button
+==================================================*/
+.paper-button-asbestos {
+    position: relative;
+    vertical-align: top;
+    padding: 5px 10px;
+    
+    color:white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #7f8c8d;
+    border: 0;
+    border-bottom: 2px solid #6d7b7c;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #6d7b7c;
+    box-shadow: inset 0 -2px #6d7b7c;
+}
+.paper-button-asbestos:active {
+    top: 1px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* #Asbestos Flat Button
+==================================================*/
+.paper-button-asbestos {
+    position: relative;
+    vertical-align: top;
+    padding: 5px 10px;
+    
+    color:white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #7f8c8d;
+    border: 0;
+    border-bottom: 2px solid #6d7b7c;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #6d7b7c;
+    box-shadow: inset 0 -2px #6d7b7c;
+}
+.paper-button-asbestos:active {
+    top: 1px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* #Graphite Flat Button
+==================================================*/
+.paper-button-graphite {
+    position: relative;
+    vertical-align: top;
+    padding: 5px 10px;
+    
+    color:white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #454545;
+    border: 0;
+    border-bottom: 2px solid #2f2e2e;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #2f2e2e;
+    box-shadow: inset 0 -2px #2f2e2e;
+}
+.paper-button-graphite:active {
+    top: 1px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* #Clouds Flat Button
+==================================================*/
+.paper-button-silver {
+    position: relative;
+    vertical-align: top;
+    padding: 5px 10px;
+    
+    color:white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #bdc3c7;
+    border: 0;
+    border-bottom: 2px solid #acb2b7;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #acb2b7;
+    box-shadow: inset 0 -2px #acb2b7;
+}
+.paper-button-silver:active {
+    top: 1px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}

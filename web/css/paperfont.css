@@ -1,0 +1,388 @@
+.paperfont{
+    display: block;
+    float: left;
+}
+.paperfont.left{
+    margin-right: 10px;
+}
+
+.paperfont.left5{
+    margin-right: 5px;
+}
+
+.paperfont.center{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.paperfont.right{
+    margin-left: 10px;
+}
+.pixel15{
+    width: 15px;
+    height: 15px;
+}
+
+.pixel20{
+    width: 20px;
+    height: 20px;
+}
+
+i.pixel60{
+    width: 60px !important;
+    height: 60px !important;
+    margin: 0 auto;
+}
+
+/* BEGIN ICONS */
+.paper-view{
+    background: url('../svg/loupe.svg') no-repeat;
+}
+.paper-alert{
+    background: url('../svg/alerts.svg') no-repeat;
+}
+.paper-binoculars{
+    background: url('../svg/binoculars.svg') no-repeat;
+}
+.paper-add{
+    background: url('../svg/add.svg') no-repeat;
+}
+.paper-remove{
+    background: url('../svg/remove.svg') no-repeat;
+}
+.paper-refresh{
+    background: url('../svg/refresh.svg') no-repeat;
+}
+.paper-update{
+    background: url('../svg/update.svg') no-repeat;
+}
+.paper-list{
+    background: url('../svg/list.svg') no-repeat;
+}
+.paper-coins{
+    background: url('../svg/coins.svg') no-repeat;
+}
+
+.paper-controls5{
+    background: url('../svg/controls-5.svg') no-repeat;
+}
+.paper-user{
+    background: url('../svg/user.svg') no-repeat;
+}
+
+.paper-setting4{
+    background: url('../svg/settings-4.svg') no-repeat;
+}
+
+.paper-obook{
+    background: url('../svg/open-book.svg') no-repeat;
+}
+
+.paper-map{
+    background: url('../svg/map.svg') no-repeat;
+}
+
+.paper-users1{
+    background: url('../svg/users-1.svg') no-repeat;
+}
+
+.paper-users{
+    background: url('../svg/users.svg') no-repeat;
+}
+
+.paper-bookmark{
+    background: url('../svg/bookmark.svg') no-repeat;
+}
+
+.paper-database2{
+    background: url('../svg/database-2.svg') no-repeat;
+}
+
+.paper-dollar{
+    background: url('../svg/dollar.svg') no-repeat;
+}
+
+.paper-notes{
+    background: url('../svg/notes.svg') no-repeat;
+}
+
+.paper-notes1{
+    background: url('../svg/notes-1.svg') no-repeat;
+}
+
+.paper-notes2{
+    background: url('../svg/notes-2.svg') no-repeat;
+}
+
+.paper-money{
+    background: url('../svg/money.svg') no-repeat;
+}
+
+.paper-moneybag{
+    background: url('../svg/money-bag.svg') no-repeat;
+}
+
+.paper-investment{
+    background: url('../svg/investment.svg') no-repeat;
+}
+
+.paper-receipt{
+    background: url('../svg/receipt.svg') no-repeat;
+}
+
+.paper-invoice{
+    background: url('../svg/invoice.svg') no-repeat;
+}
+
+.paper-invoice1{
+    background: url('../svg/invoice1.svg') no-repeat;
+}
+
+.paper-cash{
+    background: url('../svg/cash.svg') no-repeat;
+}
+
+.paper-payment{
+    background: url('../svg/payment.svg') no-repeat;
+}
+
+.paper-card{
+    background: url('../svg/card.svg') no-repeat;
+}
+
+.paper-coupon{
+    background: url('../svg/coupon.svg') no-repeat;
+}
+
+.paper-voucher1{
+    background: url('../svg/voucher1.svg') no-repeat;
+}
+
+.paper-pricetag4{
+    background: url('../svg/price-tag-4.svg') no-repeat;
+}
+
+.paper-piechart{
+    background: url('../svg/pie-chart.svg') no-repeat;
+}
+
+.paper-boy{
+    background: url('../svg/boy.svg') no-repeat;
+}
+
+.paper-man{
+     background: url('../svg/man.svg') no-repeat;
+}
+
+.paper-woman{
+    background: url('../svg/woman.svg') no-repeat;
+}
+
+.paper-family{
+    background: url('../svg/family.svg') no-repeat;
+}
+
+.paper-backpack{
+    background: url('../svg/backpack.svg') no-repeat;
+}
+
+.paper-branch{
+    background: url('../svg/branch.svg') no-repeat;
+}
+
+.paper-chalkboard{
+    background: url('../svg/chalkboard.svg') no-repeat;
+}
+
+.paper-curriculum{
+    background: url('../svg/curriculum.svg') no-repeat;
+}
+
+.paper-money1{
+    background: url('../svg/money1.svg') no-repeat;
+}
+
+.paper-windows{
+    background: url('../svg/windows.svg') no-repeat;
+}
+
+.paper-windows1{
+    background: url('../svg/windows-1.svg') no-repeat;
+}
+
+.paper-windows2{
+    background: url('../svg/windows-2.svg') no-repeat;
+}
+
+.paper-windows3{
+    background: url('../svg/windows-3.svg') no-repeat;
+}
+
+.paper-notebook{
+    background: url('../svg/notebook.svg') no-repeat;
+}
+
+.paper-notebook1{
+    background: url('../svg/notebook-1.svg') no-repeat;
+}
+
+.paper-notebook2{
+    background: url('../svg/notebook-2.svg') no-repeat;
+}
+
+.paper-notebook3{
+    background: url('../svg/notebook-3.svg') no-repeat;
+}
+
+.paper-notebook4{
+    background: url('../svg/notebook-4.svg') no-repeat;
+}
+
+.paper-notebook5{
+    background: url('../svg/notebook-5.svg') no-repeat;
+}
+
+
+/*FINANCE*/
+
+.paper-voucher{
+    background: url('../svg/voucher.svg') no-repeat;
+}
+
+.paper-shoppingbag{
+    background: url('../svg/shopping-bag.svg') no-repeat;
+}
+
+.paper-invoiceitem{
+    background: url('../svg/invoice-item.svg') no-repeat;
+}
+
+.paper-invoice2{
+    background: url('../svg/invoice2.svg') no-repeat;
+}
+
+.paper-voucher2{
+    background: url('../svg/voucher2.svg') no-repeat;
+}
+
+.paper-discount{
+    background: url('../svg/discount.svg') no-repeat;
+}
+
+.paper-creditcard{
+    background: url('../svg/credit-card.svg') no-repeat;
+}
+
+.paper-finance{
+    background: url('../svg/finance.svg') no-repeat;
+}
+
+/*ACADEMIC*/
+
+.paper-book{
+    background: url('../svg/book.svg') no-repeat;
+}
+
+.paper-checklist{
+    background: url('../svg/check-list.svg') no-repeat;
+}
+
+.paper-school{
+    background: url('../svg/school.svg') no-repeat;
+}
+
+.paper-school1{
+    background: url('../svg/school1.svg') no-repeat;
+}
+
+.paper-schoolmaterial{
+    background: url('../svg/school-material.svg') no-repeat;
+}
+
+.paper-schoolmaterial1{
+    background: url('../svg/school-material1.svg') no-repeat;
+}
+
+.paper-notepad{
+    background: url('../svg/notepad.svg') no-repeat;
+}
+
+.paper-whiteboard{
+    background: url('../svg/whiteboard.svg') no-repeat;
+}
+
+.paper-blackboard{
+    background: url('../svg/blackboard.svg') no-repeat;
+}
+
+.paper-deskchair{
+    background: url('../svg/desk-chair.svg') no-repeat;
+}
+
+.paper-desk{
+    background: url('../svg/desk.svg') no-repeat;
+}
+
+.paper-grade{
+    background: url('../svg/grade.svg') no-repeat;
+}
+
+.paper-calendar{
+    background: url('../svg/calendar.svg') no-repeat;
+}
+
+.paper-calendar1{
+    background: url('../svg/calendar1.svg') no-repeat;
+}
+
+.paper-calendar2{
+    background: url('../svg/calendar2.svg') no-repeat;
+}
+
+.paper-learning{
+    background: url('../svg/learning.svg') no-repeat;
+}
+
+.paper-learning1{
+    background: url('../svg/learning1.svg') no-repeat;
+}
+
+.paper-teacher{
+    background: url('../svg/teacher.svg') no-repeat;
+}
+
+.paper-mother{
+    background: url('../svg/mother.svg') no-repeat;
+}
+
+.paper-library{
+    background: url('../svg/library.svg') no-repeat;
+}
+
+.paper-test{
+    background: url('../svg/test.svg') no-repeat;
+}
+
+.paper-networking{
+    background: url('../svg/networking.svg') no-repeat;
+}
+
+/* SETTING */
+.paper-setting{
+    background: url('../svg/setting.svg') no-repeat;
+}
+
+.paper-anchor{
+    background: url('../svg/anchor.svg') no-repeat;
+}
+
+.paper-tool{
+    background: url('../svg/tool.svg') no-repeat;
+}
+
+.paper-tool1{
+    background: url('../svg/tool1.svg') no-repeat;
+}
+
+.paper-speedometer{
+    background: url('../svg/speedometer.svg') no-repeat;
+}
